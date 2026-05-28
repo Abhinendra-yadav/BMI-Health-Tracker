@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Health Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center align-items-center" style="min-height: 80vh;">
+        <div class="col-md-6 col-lg-5">
+            <div class="card premium-card">
+                <div class="card-header premium-header text-center py-4">
+                    <h3 class="mb-0 text-white fw-bold"><i class="bi bi-heart-pulse-fill me-2"></i>BMI Health Tracker</h3>
+                </div>
+                <div class="card-body p-4 p-md-5">
+                    <form id="bmiForm">
+                        <div class="mb-4">
+                            <label for="weight" class="form-label text-muted fw-semibold">Weight (kg)</label>
+                            <div class="input-group premium-input">
+                                <span class="input-group-text bg-white border-end-0"><i class="bi bi-speedometer2 text-primary"></i></span>
+                                <input type="number" class="form-control border-start-0 ps-0" id="weight" step="0.1" required placeholder="e.g., 70.5">
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label for="height" class="form-label text-muted fw-semibold">Height (cm)</label>
+                            <div class="input-group premium-input">
+                                <span class="input-group-text bg-white border-end-0"><i class="bi bi-person-standing text-primary"></i></span>
+                                <input type="number" class="form-control border-start-0 ps-0" id="height" step="0.1" required placeholder="e.g., 175">
+                            </div>
+                        </div>
+                        <div class="d-grid gap-2 mt-5">
+                            <button type="submit" class="btn premium-btn btn-lg fw-bold shadow-sm">Calculate & Save</button>
+                        </div>
+                        <div class="text-center mt-3">
+    <a href="BmiTrackerServlet" class="text-decoration-none fw-bold text-info">View My History 📜</a>
+</div>
+                    </form>
+
+                    <div id="resultCard" class="mt-4 text-center d-none result-animation">
+                        <hr class="text-muted opacity-25">
+                        <h5 class="text-muted mb-3">Your Result</h5>
+                        <h2 class="fw-bold mb-2 text-dark"><span id="bmiValue"></span></h2>
+                        <div id="bmiCategory" class="badge rounded-pill fs-6 py-2 px-4 shadow-sm mb-3"></div>
+                        <p id="serverMessage" class="fw-bold small mt-2"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <footer class="text-center mt-4">
+                <p class="text-muted small fw-medium">Engineered by Full-Stack Developer</p>
+            </footer>
+        </div>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

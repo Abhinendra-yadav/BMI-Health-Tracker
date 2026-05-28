@@ -1,0 +1,75 @@
+/* Premium UI Upgrade */
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Modern soft gradient background */
+    background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+    min-height: 100vh;
+}
+
+.premium-card {
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px); /* Glassmorphism touch */
+}
+
+.premium-header {
+    /* Beautiful blue/purple gradient for the header */
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%) !important;
+    border-radius: 20px 20px 0 0 !important;
+    border-bottom: none;
+}
+
+.premium-input .input-group-text,
+.premium-input .form-control {
+    border-color: #e0e0e0;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.premium-input .form-control:focus {
+    box-shadow: none;
+    border-color: #4facfe;
+}
+
+.premium-input .input-group-text {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.premium-input .form-control {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.premium-btn {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    transition: all 0.3s ease;
+}
+
+.premium-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(79, 172, 254, 0.4) !important;
+    color: white;
+}
+
+/* Smooth fade-in for results */
+.result-animation {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Refined category badge colors */
+.bg-underweight { background-color: #f6c23e; color: #fff; }
+.bg-normal { background-color: #1cc88a; color: #fff; }
+.bg-overweight { background-color: #e74a3b; color: #fff; }
+.bg-obese { background-color: #858796; color: #fff; }

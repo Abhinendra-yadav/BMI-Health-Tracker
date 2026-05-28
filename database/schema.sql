@@ -1,0 +1,11 @@
+CREATE DATABASE bmi_db;
+USE bmi_db;
+
+CREATE TABLE bmi_records (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    weight DOUBLE NOT NULL,
+    height DOUBLE NOT NULL,
+    bmi_value DOUBLE NOT NULL,
+    category VARCHAR(50) NOT NULL,
+    record_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
